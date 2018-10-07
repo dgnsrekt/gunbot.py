@@ -94,3 +94,10 @@ ENV/
 # dgnsrekt custom
 pytest.ini
 temp-plot.html
+
+# Project Specific
+gunbot/
+clean.json
+configuration/
+lin.zip
+*.toml
