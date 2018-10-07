@@ -1,4 +1,8 @@
+# SYSTEM
 from pathlib import Path
+
+# THIRD-PARTY
+# LOCAL
 
 BASEPATH = Path(__file__).parent
 
