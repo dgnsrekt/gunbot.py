@@ -101,3 +101,4 @@ clean.json
 configuration/
 lin.zip
 *.toml
+*.tmp
