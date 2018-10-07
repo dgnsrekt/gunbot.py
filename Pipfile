@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest-watch = "*"
+black = "*"
+
+[packages]
+luigi = "*"
+
+[requires]
+python_version = "3.6"
