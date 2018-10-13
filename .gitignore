@@ -99,7 +99,7 @@ temp-plot.html
 gunbot/
 clean.json
 configuration/
-lin.zip
+*.zip
 lin
 *.toml
 *.tmp
