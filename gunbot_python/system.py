@@ -19,12 +19,13 @@ class DownloadTask(luigi.Task):
         return luigi.LocalTarget(str(GUNBOT_DOWNLOAD_PATH))
 
     def run(self):
-        logger.info("Download Gunbot Linux", url=GUNBOT_DOWNLOAD_URL)
+        logger.info("Downloading Gunbot Linux", url=GUNBOT_DOWNLOAD_URL)
         wget.download(GUNBOT_DOWNLOAD_URL, self.output().path)
 
 
 class ExtractandVerifyTask(luigi.Task):
-    pass
+    def requires(self):
+        return DownloadTask()
 
 
 luigi.build([DownloadTask()], local_scheduler=True)

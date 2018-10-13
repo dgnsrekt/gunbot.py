@@ -100,5 +100,6 @@ gunbot/
 clean.json
 configuration/
 lin.zip
+lin
 *.toml
 *.tmp
